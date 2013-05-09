@@ -21,4 +21,4 @@ This way you can convert each CSV record into the required database field type.
 To add data validation use <code>AddValidation</code> method. This can be quite useful when we want to make sure that 
 data in CSV does match the database field type.
 
-    $importer->AddValidation('person_age', 25, BfgImporter::INT, true);
+    $importer->AddValidation('person_age', 25, Importer::INT, true);
