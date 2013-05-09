@@ -1,7 +1,7 @@
 <?php
 //Include Claromentis core files here
 
-$importer = new BfgImporter("path_to_my_csv_file.csv");
+$importer = new Importer("path_to_my_csv_file.csv");
 
 //Specify links between CSV and Database
 //usage: AddLink(string $csv_header_name, string $database_header_name)
@@ -17,5 +17,5 @@ $importer->AddCallback('personality_type', 'Person::PersonalityStringToInteger()
 
 //Perform data validation, this is useful when we want to make sure that data in CSV match database type
 //usage: AddValidation(string $csv_header_name, int $db_default_value=null, int $type=self::STRING, bool $is_mandatory=false)
-$importer->AddValidation('person_age', 25, BfgImporter::INT, true);
-$importer->AddValidation('personality_type', 0, BfgImporter::STRING, false);
+$importer->AddValidation('person_age', 25, Importer::INT, true);
+$importer->AddValidation('personality_type', 0, Importer::STRING, false);
