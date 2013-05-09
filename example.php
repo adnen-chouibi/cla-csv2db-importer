@@ -13,7 +13,7 @@ $importer->AddLink('email', 'email');
 //Add Callback
 //adds a callback function to each CSV entity specified by header
 //usage: AddCallback(string $csv_header_name, string $function_name)
-$importer->AddCallback('personality_type', 'Person::PersonalityStringToInteger()');
+$importer->AddCallback('personality_type', 'Person::PersonalityStringToID');
 
 //Perform data validation, this is useful when we want to make sure that data in CSV match database type
 //usage: AddValidation(string $csv_header_name, int $db_default_value=null, int $type=self::STRING, bool $is_mandatory=false)
