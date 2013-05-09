@@ -1,6 +1,6 @@
 Claromentis CSV to Database Importer
 ====================================
-cla-csv2db-importer allows you to easily import CSV file data into your database.
+cla-csv2db-importer allows you to easily import CSV file data directly into your database.
 ## Usage ##
 
     $importer = new Importer("path_to_my_csv_file.csv");
