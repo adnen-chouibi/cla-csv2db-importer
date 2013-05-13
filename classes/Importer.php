@@ -371,10 +371,13 @@ class Importer extends ErrorHandler
 		return $r;
 	}
 	
+	/**
+	 * Get errors in datasrc format
+	 * @return array
+	 */
 	public function GetErrorDatasrc()
 	{
 		$data = array();
-		
 		foreach($this->errors as $err)
 		{
 			$data[] = array('error_desc.body'=> $err); 
